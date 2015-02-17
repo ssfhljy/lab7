@@ -21,6 +21,8 @@ function initializePage() {
 		// this is the URL we'll call
 		var url_call = '/project/'+idNumber;
 
+		$.get(url_call, addProjectDetails);
+
 		// How to respond to the GET request
 		function addProjectDetails(project_json) {
 			// We need to compute a display string for the date
